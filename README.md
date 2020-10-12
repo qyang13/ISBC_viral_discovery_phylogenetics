@@ -11,4 +11,4 @@ Download this repository using one of the following commands:
 	```
 
 * If you do not have `git` installed, you can simply download the ZIP package of this repository:
-![Download](https://github.com/qyang13/ISCB_viral_discovery_phylogenetics/img/download.png)
+![Download](https://github.com/qyang13/ISCB_viral_discovery_phylogenetics/blob/main/img/download.png)
