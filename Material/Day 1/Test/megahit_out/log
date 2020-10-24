@@ -1,0 +1,1018 @@
+2020-10-03 15:30:22 - MEGAHIT v1.2.9
+2020-10-03 15:30:22 - Maximum number of available CPU thread is 4.
+2020-10-03 15:30:22 - Number of thread is reset to the 4.
+2020-10-03 15:30:22 - Using megahit_core with POPCNT and BMI2 support
+2020-10-03 15:30:22 - Convert reads to binary library
+2020-10-03 15:30:22 - command /home/ubuntu/miniconda2/bin/megahit_core buildlib /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib
+2020-10-03 15:30:27 - INFO  sequence/io/sequence_lib.cpp  :   77 - Lib 0 (/home/ubuntu/Material/Day1/Data/SRR11085797_U_qualtrim_BatUnaligned.fastq): se, 5657798 reads, 151 max length
+2020-10-03 15:30:27 - INFO  utils/utils.h                 :  152 - Real: 4.8868	user: 4.7843	sys: 0.6705	maxrss: 269476
+2020-10-03 15:30:27 - k-max reset to: 141 
+2020-10-03 15:30:27 - Start assembly. Number of CPU threads 4 
+2020-10-03 15:30:27 - k list: 21,29,39,59,79,99,119,141 
+2020-10-03 15:30:27 - Memory used: 14937255936
+2020-10-03 15:30:27 - Extract solid (k+1)-mers for k = 21 
+2020-10-03 15:30:27 - command /home/ubuntu/miniconda2/bin/megahit_core count -k 21 -m 2 --host_mem 14937255936.0 --mem_flag 1 --output_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k21/21 --num_cpu_threads 4 --read_lib_file /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib
+2020-10-03 15:30:27 - INFO  sorting/base_engine.cpp       :  148 - Preparing data...
+2020-10-03 15:30:27 - INFO  sequence/io/sequence_lib.cpp  :  115 - Before reading, sizeof seq_package: 209099792
+2020-10-03 15:30:27 - INFO  sequence/io/sequence_lib.cpp  :  117 - After reading, sizeof seq_package: 209099792
+2020-10-03 15:30:27 - INFO  sorting/kmer_counter.cpp      :   76 - 5657798 reads, 151 max read length
+2020-10-03 15:30:27 - INFO  sorting/kmer_counter.cpp      :   83 - 2 words per substring, 2 words per edge
+2020-10-03 15:30:27 - INFO  sorting/base_engine.cpp       :  153 - Preparing data... Done. Time elapsed: 0.6638
+2020-10-03 15:30:27 - INFO  sorting/base_engine.cpp       :  156 - Preparing partitions and calculating bucket sizes...
+2020-10-03 15:30:30 - INFO  sorting/base_engine.cpp       :   80 - Minimum memory required: 854369352 bytes
+2020-10-03 15:30:30 - INFO  sorting/base_engine.cpp       :  138 - Lv1 items: 71538458, Lv2 items: 29639504
+2020-10-03 15:30:30 - INFO  sorting/base_engine.cpp       :  140 - Memory of derived class: 261579272, Memory for Lv1+Lv2: 760385896
+2020-10-03 15:30:30 - INFO  sorting/base_engine.cpp       :  168 - Preparing partitions and calculating bucket sizes... Done. Time elapsed: 2.9433
+2020-10-03 15:30:30 - INFO  sorting/base_engine.cpp       :  172 - Start main loop...
+2020-10-03 15:30:30 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 0 to 1
+2020-10-03 15:30:33 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 2.8033
+2020-10-03 15:30:35 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 1.9471
+2020-10-03 15:30:35 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 1 to 2
+2020-10-03 15:30:38 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 2.8870
+2020-10-03 15:30:40 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 1.8315
+2020-10-03 15:30:40 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 2 to 3
+2020-10-03 15:30:43 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 3.0042
+2020-10-03 15:30:45 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 1.7370
+2020-10-03 15:30:45 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 3 to 4
+2020-10-03 15:30:48 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 2.9681
+2020-10-03 15:30:49 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 1.4332
+2020-10-03 15:30:49 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 4 to 6
+2020-10-03 15:30:52 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 2.7704
+2020-10-03 15:30:53 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 1.3293
+2020-10-03 15:30:53 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 6 to 12
+2020-10-03 15:30:56 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 2.7909
+2020-10-03 15:30:57 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 1.2031
+2020-10-03 15:30:57 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 12 to 123
+2020-10-03 15:31:00 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 3.1582
+2020-10-03 15:31:04 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 3.3670
+2020-10-03 15:31:04 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 123 to 16605
+2020-10-03 15:31:09 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 5.1502
+2020-10-03 15:31:25 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 16.6630
+2020-10-03 15:31:25 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 16605 to 65536
+2020-10-03 15:31:29 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 3.7434
+2020-10-03 15:31:34 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 5.0250
+2020-10-03 15:31:34 - INFO  sorting/base_engine.cpp       :  204 - Main loop done. Time elapsed: 63.8184
+2020-10-03 15:31:34 - INFO  sorting/base_engine.cpp       :  207 - Postprocessing...
+2020-10-03 15:31:34 - INFO  sorting/kmer_counter.cpp      :  406 - Total number of candidate reads: 97265 (425049)
+2020-10-03 15:31:34 - INFO  sorting/kmer_counter.cpp      :  408 - Total number of solid edges: 19266288
+2020-10-03 15:31:34 - INFO  sorting/base_engine.cpp       :  210 - Postprocess done. Time elapsed: 0.1012
+2020-10-03 15:31:34 - INFO  utils/utils.h                 :  152 - Real: 67.5642	user: 234.2608	sys: 0.8618	maxrss: 1012308
+2020-10-03 15:31:34 - Build graph for k = 21 
+2020-10-03 15:31:34 - command /home/ubuntu/miniconda2/bin/megahit_core seq2sdbg --host_mem 14937255936.0 --mem_flag 1 --output_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k21/21 --num_cpu_threads 4 -k 21 --kmer_from 0 --input_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k21/21 --need_mercy
+2020-10-03 15:31:34 - INFO  sorting/base_engine.cpp       :  148 - Preparing data...
+2020-10-03 15:31:34 - INFO  sorting/seq_to_sdbg.cpp       :  369 - Number edges: 19266288
+2020-10-03 15:31:34 - INFO  sorting/seq_to_sdbg.cpp       :  415 - Bases to reserve: 529822920, number contigs: 0, number multiplicity: 24082860
+2020-10-03 15:31:34 - INFO  sorting/seq_to_sdbg.cpp       :  422 - Before reading, sizeof seq_package: 132455740, multiplicity vector: 24082860
+2020-10-03 15:31:35 - INFO  sorting/seq_to_sdbg.cpp       :  428 - Read 19266288 edges.
+2020-10-03 15:31:35 - INFO  sorting/seq_to_sdbg.cpp       :  433 - After reading, sizeof seq_package: 132455740/19266288/423858336, multiplicity vector: 19266288/24082860
+2020-10-03 15:31:35 - INFO  sorting/seq_to_sdbg.cpp       :  440 - Adding mercy edges...
+2020-10-03 15:31:35 - INFO  sorting/seq_to_sdbg.cpp       :  192 - Read 65536 reads to search for mercy k-mers
+2020-10-03 15:31:38 - INFO  sorting/seq_to_sdbg.cpp       :  192 - Read 31729 reads to search for mercy k-mers
+2020-10-03 15:31:39 - INFO  sorting/seq_to_sdbg.cpp       :  356 - Number of reads: 97265, Number of mercy edges: 1558191
+2020-10-03 15:31:39 - INFO  sorting/seq_to_sdbg.cpp       :  444 - Done. Time elapsed: 4.2717
+2020-10-03 15:31:39 - INFO  sorting/seq_to_sdbg.cpp       :  449 - After adding mercy, sizeof seq_package: 132455740/20824479/458138538, multiplicity vector: 20824479/24082860
+2020-10-03 15:31:39 - INFO  sorting/seq_to_sdbg.cpp       :  508 - Finally, sizeof seq_package: 132455740/20824479/458138538, multiplicity vector: 20824479/24082860
+2020-10-03 15:31:39 - INFO  sorting/base_engine.cpp       :  153 - Preparing data... Done. Time elapsed: 5.1022
+2020-10-03 15:31:39 - INFO  sorting/base_engine.cpp       :  156 - Preparing partitions and calculating bucket sizes...
+2020-10-03 15:31:40 - INFO  sorting/base_engine.cpp       :   80 - Minimum memory required: 189292136 bytes
+2020-10-03 15:31:40 - INFO  sorting/base_engine.cpp       :  138 - Lv1 items: 16659583, Lv2 items: 146443
+2020-10-03 15:31:40 - INFO  sorting/base_engine.cpp       :  140 - Memory of derived class: 184200692, Memory for Lv1+Lv2: 67809876
+2020-10-03 15:31:40 - INFO  sorting/base_engine.cpp       :  168 - Preparing partitions and calculating bucket sizes... Done. Time elapsed: 0.4789
+2020-10-03 15:31:40 - INFO  sorting/base_engine.cpp       :  172 - Start main loop...
+2020-10-03 15:31:40 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 0 to 1287
+2020-10-03 15:31:40 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2983
+2020-10-03 15:31:41 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.7371
+2020-10-03 15:31:41 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 1287 to 4403
+2020-10-03 15:31:41 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2836
+2020-10-03 15:31:42 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.7972
+2020-10-03 15:31:42 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 4403 to 8950
+2020-10-03 15:31:42 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2918
+2020-10-03 15:31:43 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.8041
+2020-10-03 15:31:43 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 8950 to 14704
+2020-10-03 15:31:43 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2947
+2020-10-03 15:31:44 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.7939
+2020-10-03 15:31:44 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 14704 to 21773
+2020-10-03 15:31:45 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2988
+2020-10-03 15:31:45 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.7906
+2020-10-03 15:31:45 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 21773 to 30691
+2020-10-03 15:31:46 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.3017
+2020-10-03 15:31:46 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.7841
+2020-10-03 15:31:46 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 30691 to 45398
+2020-10-03 15:31:47 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.3168
+2020-10-03 15:31:48 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.7769
+2020-10-03 15:31:48 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 45398 to 65536
+2020-10-03 15:31:48 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2411
+2020-10-03 15:31:48 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.3412
+2020-10-03 15:31:48 - INFO  sorting/base_engine.cpp       :  204 - Main loop done. Time elapsed: 8.1577
+2020-10-03 15:31:48 - INFO  sorting/base_engine.cpp       :  207 - Postprocessing...
+2020-10-03 15:31:48 - INFO  sorting/seq_to_sdbg.cpp       :  793 - Number of $ A C G T A- C- G- T-:
+2020-10-03 15:31:48 - INFO  sorting/seq_to_sdbg.cpp       :  794 - 454528 12111722 8545046 8436189 12168527 254409 169505 164893 252898
+2020-10-03 15:31:48 - INFO  sorting/seq_to_sdbg.cpp       :  800 - Total number of edges: 42557717
+2020-10-03 15:31:48 - INFO  sorting/seq_to_sdbg.cpp       :  801 - Total number of ONEs: 41261484
+2020-10-03 15:31:48 - INFO  sorting/seq_to_sdbg.cpp       :  803 - Total number of $v edges: 454528
+2020-10-03 15:31:48 - INFO  sorting/base_engine.cpp       :  210 - Postprocess done. Time elapsed: 0.0642
+2020-10-03 15:31:48 - INFO  utils/utils.h                 :  152 - Real: 13.8146	user: 44.5813	sys: 0.6153	maxrss: 484440
+2020-10-03 15:31:48 - Assemble contigs from SdBG for k = 21
+2020-10-03 15:31:48 - command /home/ubuntu/miniconda2/bin/megahit_core assemble -s /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k21/21 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21 -t 4 --min_standalone 300 --prune_level 2 --merge_len 20 --merge_similar 0.95 --cleaning_rounds 5 --disconnect_ratio 0.1 --low_local_ratio 0.2 --cleaning_rounds 5 --min_depth 2 --bubble_level 2 --max_tip_len -1 --careful_bubble
+2020-10-03 15:31:49 - INFO  main_assemble.cpp             :  129 - Loading succinct de Bruijn graph: /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k21/21Done. Time elapsed: 0.682042
+2020-10-03 15:31:49 - INFO  main_assemble.cpp             :  133 - Number of Edges: 42557717; K value: 21
+2020-10-03 15:31:49 - INFO  main_assemble.cpp             :  140 - Number of CPU threads: 4
+2020-10-03 15:31:51 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 2; Accumulated tips removed: 40640; time elapsed: 0.2694
+2020-10-03 15:31:52 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 4; Accumulated tips removed: 81552; time elapsed: 0.4541
+2020-10-03 15:31:52 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 8; Accumulated tips removed: 121752; time elapsed: 0.8664
+2020-10-03 15:31:54 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 16; Accumulated tips removed: 162864; time elapsed: 1.6984
+2020-10-03 15:31:57 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 32; Accumulated tips removed: 207169; time elapsed: 3.1765
+2020-10-03 15:32:01 - INFO  assembly/sdbg_pruning.cpp     :  169 - Removing tips with length less than 42; Accumulated tips removed: 227780; time elapsed: 3.8397
+2020-10-03 15:32:01 - INFO  main_assemble.cpp             :  158 - Tips removal done! Time elapsed(sec): 12.298
+2020-10-03 15:32:18 - INFO  assembly/unitig_graph.cpp     :   84 - Graph size without loops: 989858, palindrome: 271
+2020-10-03 15:32:18 - INFO  main_assemble.cpp             :  167 - unitig graph size: 991206, time for building: 17.004
+2020-10-03 15:32:18 - INFO  assembly/contig_stat.h        :   40 - Max: 3236, Min: 22, N50: 45, number contigs: 991206, number isolated: 105620, number looped: 1348, total size: 40375334,
+2020-10-03 15:32:18 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 1
+2020-10-03 15:32:19 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 7220, Time elapsed(sec): 0.910
+2020-10-03 15:32:21 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 9236, Time elapsed(sec): 1.132002
+2020-10-03 15:32:21 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 319339, time: 0.694
+2020-10-03 15:32:22 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 95, time: 0.328
+2020-10-03 15:32:22 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 2
+2020-10-03 15:32:23 - INFO  main_assemble.cpp             :  192 - Tips removed: 72065, time: 1.764
+2020-10-03 15:32:24 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 52, Time elapsed(sec): 0.469
+2020-10-03 15:32:24 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 9, Time elapsed(sec): 0.494480
+2020-10-03 15:32:25 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 793, time: 0.380
+2020-10-03 15:32:25 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 1, time: 0.280
+2020-10-03 15:32:25 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 3
+2020-10-03 15:32:26 - INFO  main_assemble.cpp             :  192 - Tips removed: 189, time: 1.532
+2020-10-03 15:32:27 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.459
+2020-10-03 15:32:27 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.485767
+2020-10-03 15:32:28 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 28, time: 0.395
+2020-10-03 15:32:28 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.102
+2020-10-03 15:32:28 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 4
+2020-10-03 15:32:29 - INFO  main_assemble.cpp             :  192 - Tips removed: 9, time: 1.556
+2020-10-03 15:32:30 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.465
+2020-10-03 15:32:30 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.490227
+2020-10-03 15:32:31 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 11, time: 0.395
+2020-10-03 15:32:31 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.101
+2020-10-03 15:32:31 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 5
+2020-10-03 15:32:32 - INFO  main_assemble.cpp             :  192 - Tips removed: 2, time: 1.509
+2020-10-03 15:32:33 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.460
+2020-10-03 15:32:33 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.482039
+2020-10-03 15:32:34 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 8, time: 0.384
+2020-10-03 15:32:34 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.097
+2020-10-03 15:32:34 - INFO  assembly/contig_stat.h        :   40 - Max: 3710, Min: 22, N50: 76, number contigs: 692728, number isolated: 119251, number looped: 587, total size: 32574667,
+2020-10-03 15:32:40 - INFO  main_assemble.cpp             :  267 - Time to output: 5.892701
+2020-10-03 15:33:08 - INFO  main_assemble.cpp             :  289 - Number of local low depth unitigs removed: 22283, complex bubbles removed: 51, time: 28.588734
+2020-10-03 15:33:09 - INFO  assembly/contig_stat.h        :   40 - Max: 3710, Min: 22, N50: 80, number contigs: 642283, number isolated: 121389, number looped: 595, total size: 31303425,
+2020-10-03 15:33:13 - INFO  utils/utils.h                 :  152 - Real: 84.3496	user: 309.6496	sys: 0.6945	maxrss: 175252
+2020-10-03 15:33:13 - Local assembly for k = 21
+2020-10-03 15:33:13 - command /home/ubuntu/miniconda2/bin/megahit_core local -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.contigs.fa -l /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib -t 4 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.local.fa --kmax 29
+2020-10-03 15:33:13 - INFO  localasm/hash_mapper.cpp      :  100 - Number of contigs: 3952, index size: 116877
+2020-10-03 15:33:13 - INFO  localasm/local_assemble.cpp   :  315 - Hash mapper construction time elapsed: 0.118721
+2020-10-03 15:33:13 - INFO  sequence/io/sequence_lib.cpp  :  115 - Before reading, sizeof seq_package: 209099792
+2020-10-03 15:33:13 - INFO  sequence/io/sequence_lib.cpp  :  117 - After reading, sizeof seq_package: 209099792
+2020-10-03 15:33:13 - INFO  localasm/local_assemble.cpp   :  324 - Read lib time elapsed: 0.437297
+2020-10-03 15:33:13 - INFO  localasm/local_assemble.cpp   :  330 - Insert size estimation time elapsed: 0.000003
+2020-10-03 15:33:29 - INFO  localasm/local_assemble.cpp   :  221 - Lib 0: total 5657798 reads, aligned 3364984, added 43336 reads to local assembly
+2020-10-03 15:33:29 - INFO  localasm/local_assemble.cpp   :  338 - Mapping time elapsed: 16.266419
+2020-10-03 15:33:29 - INFO  localasm/local_assemble.cpp   :  232 - Minimum number of reads to do local assembly: 0
+2020-10-03 15:33:30 - INFO  localasm/local_assemble.cpp   :  346 - Local assembly time elapsed: 0.230722
+2020-10-03 15:33:30 - INFO  utils/utils.h                 :  152 - Real: 17.0652	user: 65.4827	sys: 0.1200	maxrss: 219968
+2020-10-03 15:33:30 - Extract iterative edges from k = 21 to 29 
+2020-10-03 15:33:30 - command /home/ubuntu/miniconda2/bin/megahit_core iterate -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.contigs.fa -b /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.bubble_seq.fa -t 4 -k 21 -s 8 -o /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k29/29 -r /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib.bin
+2020-10-03 15:33:30 - INFO  main_iterate.cpp              :  190 - Selected kmer type size for k: 8
+2020-10-03 15:33:30 - INFO  main_iterate.cpp              :  174 - Read 573477 contigs
+2020-10-03 15:33:30 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 992365
+2020-10-03 15:33:30 - INFO  main_iterate.cpp              :  174 - Read 49098 contigs
+2020-10-03 15:33:30 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 1066682
+2020-10-03 15:33:30 - INFO  main_iterate.cpp              :  123 - Selected kmer type size for next k: 8
+2020-10-03 15:33:51 - INFO  main_iterate.cpp              :  139 - Processed: 4194304, aligned: 3412327. Iterative edges: 2143729
+2020-10-03 15:33:56 - INFO  main_iterate.cpp              :  139 - Processed: 5657798, aligned: 4181212. Iterative edges: 2559427
+2020-10-03 15:33:56 - INFO  main_iterate.cpp              :  143 - Total: 5657798, aligned: 4181212. Iterative edges: 2559427
+2020-10-03 15:33:56 - INFO  utils/utils.h                 :  152 - Real: 26.6166	user: 71.0065	sys: 0.3400	maxrss: 360636
+2020-10-03 15:33:56 - Build graph for k = 29 
+2020-10-03 15:33:56 - command /home/ubuntu/miniconda2/bin/megahit_core seq2sdbg --host_mem 14937255936.0 --mem_flag 1 --output_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k29/29 --num_cpu_threads 4 -k 29 --kmer_from 21 --input_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k29/29 --addi_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.addi.fa --local_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.local.fa --contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.contigs.fa --bubble /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.bubble_seq.fa
+2020-10-03 15:33:56 - INFO  sorting/base_engine.cpp       :  148 - Preparing data...
+2020-10-03 15:33:56 - INFO  sorting/seq_to_sdbg.cpp       :  369 - Number edges: 2559427
+2020-10-03 15:33:56 - INFO  sorting/seq_to_sdbg.cpp       :  415 - Bases to reserve: 98274930, number contigs: 765712, number multiplicity: 3325139
+2020-10-03 15:33:56 - INFO  sorting/seq_to_sdbg.cpp       :  422 - Before reading, sizeof seq_package: 30694440, multiplicity vector: 3325139
+2020-10-03 15:33:56 - INFO  sorting/seq_to_sdbg.cpp       :  428 - Read 2559427 edges.
+2020-10-03 15:33:56 - INFO  sorting/seq_to_sdbg.cpp       :  433 - After reading, sizeof seq_package: 30694440/2559427/76782810, multiplicity vector: 2559427/3325139
+2020-10-03 15:33:57 - INFO  sorting/seq_to_sdbg.cpp       :  458 - Read 280255 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.contigs.fa.
+2020-10-03 15:33:57 - INFO  sorting/seq_to_sdbg.cpp       :  463 - After reading contigs, sizeof seq_package: 55263176/2839682/99569381, multiplicity vector: 2839682/3325139
+2020-10-03 15:33:57 - INFO  sorting/seq_to_sdbg.cpp       :  470 - Read 41000 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.bubble_seq.fa.
+2020-10-03 15:33:57 - INFO  sorting/seq_to_sdbg.cpp       :  475 - After reading contigs, sizeof seq_package: 55263176/2880682/101900099, multiplicity vector: 2880682/3325139
+2020-10-03 15:33:57 - INFO  sorting/seq_to_sdbg.cpp       :  484 - Read 7167 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.addi.fa.
+2020-10-03 15:33:57 - INFO  sorting/seq_to_sdbg.cpp       :  489 - After reading contigs, sizeof seq_package: 55263176/2887849/102221669, multiplicity vector: 2887849/3325139
+2020-10-03 15:33:57 - INFO  sorting/seq_to_sdbg.cpp       :  498 - Read 287 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k21.local.fa.
+2020-10-03 15:33:57 - INFO  sorting/seq_to_sdbg.cpp       :  503 - After reading contigs, sizeof seq_package: 55263176/2888136/102281889, multiplicity vector: 2888136/3325139
+2020-10-03 15:33:57 - INFO  sorting/seq_to_sdbg.cpp       :  508 - Finally, sizeof seq_package: 55263176/2888136/102281889, multiplicity vector: 2888136/3325139
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  153 - Preparing data... Done. Time elapsed: 0.3060
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  156 - Preparing partitions and calculating bucket sizes...
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :   80 - Minimum memory required: 65539534 bytes
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  138 - Lv1 items: 6480591, Lv2 items: 108511
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  140 - Memory of derived class: 62712558, Memory for Lv1+Lv2: 27224496
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  168 - Preparing partitions and calculating bucket sizes... Done. Time elapsed: 0.1743
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  172 - Start main loop...
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 0 to 588
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.1639
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.3719
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 588 to 3121
+2020-10-03 15:33:57 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2211
+2020-10-03 15:33:58 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.4953
+2020-10-03 15:33:58 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 3121 to 7383
+2020-10-03 15:33:58 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2363
+2020-10-03 15:33:59 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.4930
+2020-10-03 15:33:59 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 7383 to 13123
+2020-10-03 15:33:59 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2470
+2020-10-03 15:33:59 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.4877
+2020-10-03 15:33:59 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 13123 to 20430
+2020-10-03 15:34:00 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2532
+2020-10-03 15:34:00 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.4982
+2020-10-03 15:34:00 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 20430 to 29924
+2020-10-03 15:34:00 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2550
+2020-10-03 15:34:01 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.5223
+2020-10-03 15:34:01 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 29924 to 46531
+2020-10-03 15:34:01 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.2580
+2020-10-03 15:34:02 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.5044
+2020-10-03 15:34:02 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 46531 to 65536
+2020-10-03 15:34:02 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.1621
+2020-10-03 15:34:02 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.1685
+2020-10-03 15:34:02 - INFO  sorting/base_engine.cpp       :  204 - Main loop done. Time elapsed: 5.3440
+2020-10-03 15:34:02 - INFO  sorting/base_engine.cpp       :  207 - Postprocessing...
+2020-10-03 15:34:02 - INFO  sorting/seq_to_sdbg.cpp       :  793 - Number of $ A C G T A- C- G- T-:
+2020-10-03 15:34:02 - INFO  sorting/seq_to_sdbg.cpp       :  794 - 578052 10417218 7305099 7173943 10462146 52143 37231 36802 49004
+2020-10-03 15:34:02 - INFO  sorting/seq_to_sdbg.cpp       :  800 - Total number of edges: 36111638
+2020-10-03 15:34:02 - INFO  sorting/seq_to_sdbg.cpp       :  801 - Total number of ONEs: 35358406
+2020-10-03 15:34:02 - INFO  sorting/seq_to_sdbg.cpp       :  803 - Total number of $v edges: 578052
+2020-10-03 15:34:02 - INFO  sorting/base_engine.cpp       :  210 - Postprocess done. Time elapsed: 0.0644
+2020-10-03 15:34:02 - INFO  utils/utils.h                 :  152 - Real: 5.8926	user: 17.5482	sys: 0.2399	maxrss: 91736
+2020-10-03 15:34:02 - Assemble contigs from SdBG for k = 29
+2020-10-03 15:34:02 - command /home/ubuntu/miniconda2/bin/megahit_core assemble -s /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k29/29 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29 -t 4 --min_standalone 300 --prune_level 2 --merge_len 20 --merge_similar 0.95 --cleaning_rounds 5 --disconnect_ratio 0.1 --low_local_ratio 0.2 --cleaning_rounds 5 --min_depth 2 --bubble_level 2 --max_tip_len -1 --careful_bubble
+2020-10-03 15:34:03 - INFO  main_assemble.cpp             :  129 - Loading succinct de Bruijn graph: /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k29/29Done. Time elapsed: 0.596573
+2020-10-03 15:34:03 - INFO  main_assemble.cpp             :  133 - Number of Edges: 36111638; K value: 29
+2020-10-03 15:34:03 - INFO  main_assemble.cpp             :  140 - Number of CPU threads: 4
+2020-10-03 15:34:05 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 2; Accumulated tips removed: 46143; time elapsed: 0.2936
+2020-10-03 15:34:05 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 4; Accumulated tips removed: 110814; time elapsed: 0.4936
+2020-10-03 15:34:06 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 8; Accumulated tips removed: 183011; time elapsed: 0.9341
+2020-10-03 15:34:08 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 16; Accumulated tips removed: 263338; time elapsed: 1.8127
+2020-10-03 15:34:11 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 32; Accumulated tips removed: 324627; time elapsed: 3.2822
+2020-10-03 15:34:16 - INFO  assembly/sdbg_pruning.cpp     :  169 - Removing tips with length less than 58; Accumulated tips removed: 413665; time elapsed: 5.0372
+2020-10-03 15:34:16 - INFO  main_assemble.cpp             :  158 - Tips removal done! Time elapsed(sec): 13.523
+2020-10-03 15:34:25 - INFO  assembly/unitig_graph.cpp     :   84 - Graph size without loops: 265194, palindrome: 43
+2020-10-03 15:34:25 - INFO  main_assemble.cpp             :  167 - unitig graph size: 266014, time for building: 8.766
+2020-10-03 15:34:25 - INFO  assembly/contig_stat.h        :   40 - Max: 3236, Min: 30, N50: 114, number contigs: 266014, number isolated: 115385, number looped: 820, total size: 21870316,
+2020-10-03 15:34:25 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 1
+2020-10-03 15:34:25 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 4846, Time elapsed(sec): 0.275
+2020-10-03 15:34:26 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 6871, Time elapsed(sec): 0.449918
+2020-10-03 15:34:26 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 122164, time: 0.129
+2020-10-03 15:34:26 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 1725, time: 0.058
+2020-10-03 15:34:26 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 2
+2020-10-03 15:34:26 - INFO  main_assemble.cpp             :  192 - Tips removed: 57398, time: 0.268
+2020-10-03 15:34:26 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 20, Time elapsed(sec): 0.060
+2020-10-03 15:34:26 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 52, Time elapsed(sec): 0.062315
+2020-10-03 15:34:26 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 29, time: 0.056
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 7, time: 0.038
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 3
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  192 - Tips removed: 19, time: 0.167
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.052
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.054226
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 1, time: 0.052
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.003
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 4
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  192 - Tips removed: 1, time: 0.162
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.057
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.057952
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.052
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.003
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 5
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  192 - Tips removed: 0, time: 0.173
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.057
+2020-10-03 15:34:27 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.059410
+2020-10-03 15:34:28 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.055
+2020-10-03 15:34:28 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.004
+2020-10-03 15:34:28 - INFO  assembly/contig_stat.h        :   40 - Max: 5094, Min: 30, N50: 128, number contigs: 139174, number isolated: 131463, number looped: 726, total size: 17224200,
+2020-10-03 15:34:30 - INFO  main_assemble.cpp             :  267 - Time to output: 2.011055
+2020-10-03 15:34:30 - INFO  main_assemble.cpp             :  289 - Number of local low depth unitigs removed: 319, complex bubbles removed: 7, time: 0.888872
+2020-10-03 15:34:31 - INFO  assembly/contig_stat.h        :   40 - Max: 5094, Min: 30, N50: 128, number contigs: 138503, number isolated: 131669, number looped: 731, total size: 17195107,
+2020-10-03 15:34:32 - INFO  utils/utils.h                 :  152 - Real: 30.1714	user: 112.2982	sys: 0.3003	maxrss: 106280
+2020-10-03 15:34:32 - Local assembly for k = 29
+2020-10-03 15:34:32 - command /home/ubuntu/miniconda2/bin/megahit_core local -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.contigs.fa -l /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib -t 4 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.local.fa --kmax 39
+2020-10-03 15:34:32 - INFO  localasm/hash_mapper.cpp      :  100 - Number of contigs: 5399, index size: 163942
+2020-10-03 15:34:32 - INFO  localasm/local_assemble.cpp   :  315 - Hash mapper construction time elapsed: 0.066079
+2020-10-03 15:34:32 - INFO  sequence/io/sequence_lib.cpp  :  115 - Before reading, sizeof seq_package: 209099792
+2020-10-03 15:34:33 - INFO  sequence/io/sequence_lib.cpp  :  117 - After reading, sizeof seq_package: 209099792
+2020-10-03 15:34:33 - INFO  localasm/local_assemble.cpp   :  324 - Read lib time elapsed: 0.431348
+2020-10-03 15:34:33 - INFO  localasm/local_assemble.cpp   :  330 - Insert size estimation time elapsed: 0.000001
+2020-10-03 15:34:51 - INFO  localasm/local_assemble.cpp   :  221 - Lib 0: total 5657798 reads, aligned 3692568, added 92584 reads to local assembly
+2020-10-03 15:34:51 - INFO  localasm/local_assemble.cpp   :  338 - Mapping time elapsed: 18.593861
+2020-10-03 15:34:51 - INFO  localasm/local_assemble.cpp   :  232 - Minimum number of reads to do local assembly: 0
+2020-10-03 15:34:52 - INFO  localasm/local_assemble.cpp   :  346 - Local assembly time elapsed: 0.479562
+2020-10-03 15:34:52 - INFO  utils/utils.h                 :  152 - Real: 19.5840	user: 76.7633	sys: 0.1280	maxrss: 222372
+2020-10-03 15:34:52 - Extract iterative edges from k = 29 to 39 
+2020-10-03 15:34:52 - command /home/ubuntu/miniconda2/bin/megahit_core iterate -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.contigs.fa -b /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.bubble_seq.fa -t 4 -k 29 -s 10 -o /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k39/39 -r /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib.bin
+2020-10-03 15:34:52 - INFO  main_iterate.cpp              :  190 - Selected kmer type size for k: 8
+2020-10-03 15:34:52 - INFO  main_iterate.cpp              :  174 - Read 7711 contigs
+2020-10-03 15:34:52 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 15358
+2020-10-03 15:34:52 - INFO  main_iterate.cpp              :  174 - Read 33493 contigs
+2020-10-03 15:34:52 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 68163
+2020-10-03 15:34:52 - INFO  main_iterate.cpp              :  123 - Selected kmer type size for next k: 12
+2020-10-03 15:34:59 - INFO  main_iterate.cpp              :  139 - Processed: 4194304, aligned: 53533. Iterative edges: 160613
+2020-10-03 15:35:01 - INFO  main_iterate.cpp              :  139 - Processed: 5657798, aligned: 95800. Iterative edges: 253020
+2020-10-03 15:35:01 - INFO  main_iterate.cpp              :  143 - Total: 5657798, aligned: 95800. Iterative edges: 253020
+2020-10-03 15:35:01 - INFO  utils/utils.h                 :  152 - Real: 9.2347	user: 23.9826	sys: 0.2320	maxrss: 261544
+2020-10-03 15:35:01 - Build graph for k = 39 
+2020-10-03 15:35:01 - command /home/ubuntu/miniconda2/bin/megahit_core seq2sdbg --host_mem 14937255936.0 --mem_flag 1 --output_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k39/39 --num_cpu_threads 4 -k 39 --kmer_from 29 --input_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k39/39 --addi_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.addi.fa --local_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.local.fa --contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.contigs.fa --bubble /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.bubble_seq.fa
+2020-10-03 15:35:01 - INFO  sorting/base_engine.cpp       :  148 - Preparing data...
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  369 - Number edges: 253020
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  415 - Bases to reserve: 15023279, number contigs: 173204, number multiplicity: 426224
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  422 - Before reading, sizeof seq_package: 5141460, multiplicity vector: 426224
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  428 - Read 253020 edges.
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  433 - After reading, sizeof seq_package: 5141460/253020/10120800, multiplicity vector: 253020/426224
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  458 - Read 138622 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.contigs.fa.
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  463 - After reading contigs, sizeof seq_package: 8897280/391642/27331287, multiplicity vector: 391642/426224
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  470 - Read 26365 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.bubble_seq.fa.
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  475 - After reading contigs, sizeof seq_package: 8897280/418007/29169996, multiplicity vector: 418007/426224
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  484 - Read 247 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.addi.fa.
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  489 - After reading contigs, sizeof seq_package: 8897280/418254/29224766, multiplicity vector: 418254/426224
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  498 - Read 290 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k29.local.fa.
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  503 - After reading contigs, sizeof seq_package: 8897280/418544/29285653, multiplicity vector: 418544/426224
+2020-10-03 15:35:01 - INFO  sorting/seq_to_sdbg.cpp       :  508 - Finally, sizeof seq_package: 8897280/418544/29285653, multiplicity vector: 418544/426224
+2020-10-03 15:35:01 - INFO  sorting/base_engine.cpp       :  153 - Preparing data... Done. Time elapsed: 0.1123
+2020-10-03 15:35:01 - INFO  sorting/base_engine.cpp       :  156 - Preparing partitions and calculating bucket sizes...
+2020-10-03 15:35:01 - INFO  sorting/base_engine.cpp       :   80 - Minimum memory required: 11312084 bytes
+2020-10-03 15:35:01 - INFO  sorting/base_engine.cpp       :  138 - Lv1 items: 3679873, Lv2 items: 29230
+2020-10-03 15:35:01 - INFO  sorting/base_engine.cpp       :  140 - Memory of derived class: 9978552, Memory for Lv1+Lv2: 15187172
+2020-10-03 15:35:01 - INFO  sorting/base_engine.cpp       :  168 - Preparing partitions and calculating bucket sizes... Done. Time elapsed: 0.0739
+2020-10-03 15:35:01 - INFO  sorting/base_engine.cpp       :  172 - Start main loop...
+2020-10-03 15:35:01 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 0 to 1739
+2020-10-03 15:35:01 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0794
+2020-10-03 15:35:02 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.2253
+2020-10-03 15:35:02 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 1739 to 5237
+2020-10-03 15:35:02 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0954
+2020-10-03 15:35:02 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.2438
+2020-10-03 15:35:02 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 5237 to 9943
+2020-10-03 15:35:02 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0980
+2020-10-03 15:35:02 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.2452
+2020-10-03 15:35:02 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 9943 to 15736
+2020-10-03 15:35:02 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0995
+2020-10-03 15:35:03 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.2536
+2020-10-03 15:35:03 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 15736 to 22785
+2020-10-03 15:35:03 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0987
+2020-10-03 15:35:03 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.2516
+2020-10-03 15:35:03 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 22785 to 31656
+2020-10-03 15:35:03 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.1007
+2020-10-03 15:35:03 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.2472
+2020-10-03 15:35:03 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 31656 to 47640
+2020-10-03 15:35:04 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.1006
+2020-10-03 15:35:04 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.2547
+2020-10-03 15:35:04 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 47640 to 65536
+2020-10-03 15:35:04 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0648
+2020-10-03 15:35:04 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0932
+2020-10-03 15:35:04 - INFO  sorting/base_engine.cpp       :  204 - Main loop done. Time elapsed: 2.5574
+2020-10-03 15:35:04 - INFO  sorting/base_engine.cpp       :  207 - Postprocessing...
+2020-10-03 15:35:04 - INFO  sorting/seq_to_sdbg.cpp       :  793 - Number of $ A C G T A- C- G- T-:
+2020-10-03 15:35:04 - INFO  sorting/seq_to_sdbg.cpp       :  794 - 278670 7386164 5223566 5091254 7437830 4021 2438 2515 3718
+2020-10-03 15:35:04 - INFO  sorting/seq_to_sdbg.cpp       :  800 - Total number of edges: 25430176
+2020-10-03 15:35:04 - INFO  sorting/seq_to_sdbg.cpp       :  801 - Total number of ONEs: 25138814
+2020-10-03 15:35:04 - INFO  sorting/seq_to_sdbg.cpp       :  803 - Total number of $v edges: 278670
+2020-10-03 15:35:04 - INFO  sorting/base_engine.cpp       :  210 - Postprocess done. Time elapsed: 0.0632
+2020-10-03 15:35:04 - INFO  utils/utils.h                 :  152 - Real: 2.8105	user: 8.9027	sys: 0.1359	maxrss: 56852
+2020-10-03 15:35:04 - Assemble contigs from SdBG for k = 39
+2020-10-03 15:35:04 - command /home/ubuntu/miniconda2/bin/megahit_core assemble -s /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k39/39 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39 -t 4 --min_standalone 300 --prune_level 2 --merge_len 20 --merge_similar 0.95 --cleaning_rounds 5 --disconnect_ratio 0.1 --low_local_ratio 0.2 --cleaning_rounds 5 --min_depth 2 --bubble_level 2 --max_tip_len -1 --careful_bubble
+2020-10-03 15:35:04 - INFO  main_assemble.cpp             :  129 - Loading succinct de Bruijn graph: /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k39/39Done. Time elapsed: 0.448561
+2020-10-03 15:35:04 - INFO  main_assemble.cpp             :  133 - Number of Edges: 25430176; K value: 39
+2020-10-03 15:35:04 - INFO  main_assemble.cpp             :  140 - Number of CPU threads: 4
+2020-10-03 15:35:06 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 2; Accumulated tips removed: 106; time elapsed: 0.1618
+2020-10-03 15:35:06 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 4; Accumulated tips removed: 248; time elapsed: 0.2835
+2020-10-03 15:35:07 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 8; Accumulated tips removed: 440; time elapsed: 0.5668
+2020-10-03 15:35:08 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 16; Accumulated tips removed: 779; time elapsed: 1.2027
+2020-10-03 15:35:10 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 32; Accumulated tips removed: 5977; time elapsed: 2.3958
+2020-10-03 15:35:14 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 64; Accumulated tips removed: 76333; time elapsed: 4.1768
+2020-10-03 15:35:18 - INFO  assembly/sdbg_pruning.cpp     :  169 - Removing tips with length less than 78; Accumulated tips removed: 129749; time elapsed: 4.0671
+2020-10-03 15:35:18 - INFO  main_assemble.cpp             :  158 - Tips removal done! Time elapsed(sec): 14.058
+2020-10-03 15:35:23 - INFO  assembly/unitig_graph.cpp     :   84 - Graph size without loops: 91997, palindrome: 1
+2020-10-03 15:35:23 - INFO  main_assemble.cpp             :  167 - unitig graph size: 92761, time for building: 4.791
+2020-10-03 15:35:23 - INFO  assembly/contig_stat.h        :   40 - Max: 5104, Min: 40, N50: 136, number contigs: 92761, number isolated: 73948, number looped: 764, total size: 12312871,
+2020-10-03 15:35:23 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 1
+2020-10-03 15:35:23 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 2282, Time elapsed(sec): 0.059
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 4052, Time elapsed(sec): 0.231227
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 96, time: 0.027
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 25, time: 0.017
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 2
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  192 - Tips removed: 4594, time: 0.122
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.027
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 6, Time elapsed(sec): 0.028917
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 1, time: 0.025
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.001
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 3
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  192 - Tips removed: 1, time: 0.088
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.026
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.025406
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.024
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.001
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 4
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  192 - Tips removed: 0, time: 0.086
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.023
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.024431
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.023
+2020-10-03 15:35:24 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.001
+2020-10-03 15:35:24 - INFO  assembly/contig_stat.h        :   40 - Max: 5104, Min: 40, N50: 137, number contigs: 76428, number isolated: 75586, number looped: 188, total size: 11251166,
+2020-10-03 15:35:25 - INFO  main_assemble.cpp             :  267 - Time to output: 1.162598
+2020-10-03 15:35:25 - INFO  main_assemble.cpp             :  289 - Number of local low depth unitigs removed: 39, complex bubbles removed: 3, time: 0.096114
+2020-10-03 15:35:25 - INFO  assembly/contig_stat.h        :   40 - Max: 5104, Min: 40, N50: 137, number contigs: 76330, number isolated: 75617, number looped: 188, total size: 11245396,
+2020-10-03 15:35:27 - INFO  utils/utils.h                 :  152 - Real: 22.5508	user: 82.2170	sys: 0.1889	maxrss: 76156
+2020-10-03 15:35:27 - Local assembly for k = 39
+2020-10-03 15:35:27 - command /home/ubuntu/miniconda2/bin/megahit_core local -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.contigs.fa -l /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib -t 4 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.local.fa --kmax 59
+2020-10-03 15:35:27 - INFO  localasm/hash_mapper.cpp      :  100 - Number of contigs: 5598, index size: 175173
+2020-10-03 15:35:27 - INFO  localasm/local_assemble.cpp   :  315 - Hash mapper construction time elapsed: 0.055557
+2020-10-03 15:35:27 - INFO  sequence/io/sequence_lib.cpp  :  115 - Before reading, sizeof seq_package: 209099792
+2020-10-03 15:35:27 - INFO  sequence/io/sequence_lib.cpp  :  117 - After reading, sizeof seq_package: 209099792
+2020-10-03 15:35:27 - INFO  localasm/local_assemble.cpp   :  324 - Read lib time elapsed: 0.436984
+2020-10-03 15:35:27 - INFO  localasm/local_assemble.cpp   :  330 - Insert size estimation time elapsed: 0.000002
+2020-10-03 15:35:46 - INFO  localasm/local_assemble.cpp   :  221 - Lib 0: total 5657798 reads, aligned 3946848, added 66476 reads to local assembly
+2020-10-03 15:35:46 - INFO  localasm/local_assemble.cpp   :  338 - Mapping time elapsed: 18.810011
+2020-10-03 15:35:46 - INFO  localasm/local_assemble.cpp   :  232 - Minimum number of reads to do local assembly: 0
+2020-10-03 15:35:47 - INFO  localasm/local_assemble.cpp   :  346 - Local assembly time elapsed: 0.697190
+2020-10-03 15:35:47 - INFO  utils/utils.h                 :  152 - Real: 20.0128	user: 78.3901	sys: 0.1680	maxrss: 222512
+2020-10-03 15:35:47 - Extract iterative edges from k = 39 to 59 
+2020-10-03 15:35:47 - command /home/ubuntu/miniconda2/bin/megahit_core iterate -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.contigs.fa -b /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.bubble_seq.fa -t 4 -k 39 -s 20 -o /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k59/59 -r /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib.bin
+2020-10-03 15:35:47 - INFO  main_iterate.cpp              :  190 - Selected kmer type size for k: 12
+2020-10-03 15:35:47 - INFO  main_iterate.cpp              :  174 - Read 842 contigs
+2020-10-03 15:35:47 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 1678
+2020-10-03 15:35:47 - INFO  main_iterate.cpp              :  174 - Read 12312 contigs
+2020-10-03 15:35:47 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 18593
+2020-10-03 15:35:47 - INFO  main_iterate.cpp              :  123 - Selected kmer type size for next k: 16
+2020-10-03 15:35:54 - INFO  main_iterate.cpp              :  139 - Processed: 4194304, aligned: 9135. Iterative edges: 70722
+2020-10-03 15:35:56 - INFO  main_iterate.cpp              :  139 - Processed: 5657798, aligned: 16633. Iterative edges: 119046
+2020-10-03 15:35:56 - INFO  main_iterate.cpp              :  143 - Total: 5657798, aligned: 16633. Iterative edges: 119046
+2020-10-03 15:35:56 - INFO  utils/utils.h                 :  152 - Real: 9.6340	user: 25.2168	sys: 0.2120	maxrss: 258264
+2020-10-03 15:35:56 - Build graph for k = 59 
+2020-10-03 15:35:56 - command /home/ubuntu/miniconda2/bin/megahit_core seq2sdbg --host_mem 14937255936.0 --mem_flag 1 --output_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k59/59 --num_cpu_threads 4 -k 59 --kmer_from 39 --input_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k59/59 --addi_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.addi.fa --local_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.local.fa --contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.contigs.fa --bubble /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.bubble_seq.fa
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  148 - Preparing data...
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  369 - Number edges: 119046
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  415 - Bases to reserve: 9675342, number contigs: 88995, number multiplicity: 208041
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  422 - Before reading, sizeof seq_package: 3130804, multiplicity vector: 208041
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  428 - Read 119046 edges.
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  433 - After reading, sizeof seq_package: 3130804/119046/7142760, multiplicity vector: 119046/208041
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  458 - Read 76336 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.contigs.fa.
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  463 - After reading contigs, sizeof seq_package: 5549640/195382/18393090, multiplicity vector: 195382/208041
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  470 - Read 6674 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.bubble_seq.fa.
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  475 - After reading contigs, sizeof seq_package: 5549640/202056/19013178, multiplicity vector: 202056/208041
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  484 - Read 32 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.addi.fa.
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  489 - After reading contigs, sizeof seq_package: 5549640/202088/19025074, multiplicity vector: 202088/208041
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  498 - Read 223 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k39.local.fa.
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  503 - After reading contigs, sizeof seq_package: 5549640/202311/19072040, multiplicity vector: 202311/208041
+2020-10-03 15:35:56 - INFO  sorting/seq_to_sdbg.cpp       :  508 - Finally, sizeof seq_package: 5549640/202311/19072040, multiplicity vector: 202311/208041
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  153 - Preparing data... Done. Time elapsed: 0.0665
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  156 - Preparing partitions and calculating bucket sizes...
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :   80 - Minimum memory required: 6884730 bytes
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  138 - Lv1 items: 2010750, Lv2 items: 14843
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  140 - Memory of derived class: 6114754, Memory for Lv1+Lv2: 8339860
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  168 - Preparing partitions and calculating bucket sizes... Done. Time elapsed: 0.0454
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  172 - Start main loop...
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 0 to 1772
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0430
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.1143
+2020-10-03 15:35:56 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 1772 to 5286
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0516
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.1254
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 5286 to 10000
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0524
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.1254
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 10000 to 15809
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0534
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.1275
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 15809 to 22884
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0538
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.1271
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 22884 to 31801
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0533
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.1282
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 31801 to 48292
+2020-10-03 15:35:57 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0536
+2020-10-03 15:35:58 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.1310
+2020-10-03 15:35:58 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 48292 to 65536
+2020-10-03 15:35:58 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0351
+2020-10-03 15:35:58 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0450
+2020-10-03 15:35:58 - INFO  sorting/base_engine.cpp       :  204 - Main loop done. Time elapsed: 1.3263
+2020-10-03 15:35:58 - INFO  sorting/base_engine.cpp       :  207 - Postprocessing...
+2020-10-03 15:35:58 - INFO  sorting/seq_to_sdbg.cpp       :  793 - Number of $ A C G T A- C- G- T-:
+2020-10-03 15:35:58 - INFO  sorting/seq_to_sdbg.cpp       :  794 - 158822 4167676 2971907 2868262 4215461 579 235 307 467
+2020-10-03 15:35:58 - INFO  sorting/seq_to_sdbg.cpp       :  800 - Total number of edges: 14383716
+2020-10-03 15:35:58 - INFO  sorting/seq_to_sdbg.cpp       :  801 - Total number of ONEs: 14223306
+2020-10-03 15:35:58 - INFO  sorting/seq_to_sdbg.cpp       :  803 - Total number of $v edges: 158822
+2020-10-03 15:35:58 - INFO  sorting/base_engine.cpp       :  210 - Postprocess done. Time elapsed: 0.0628
+2020-10-03 15:35:58 - INFO  utils/utils.h                 :  152 - Real: 1.5041	user: 4.6279	sys: 0.1043	maxrss: 46768
+2020-10-03 15:35:58 - Assemble contigs from SdBG for k = 59
+2020-10-03 15:35:58 - command /home/ubuntu/miniconda2/bin/megahit_core assemble -s /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k59/59 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59 -t 4 --min_standalone 300 --prune_level 2 --merge_len 20 --merge_similar 0.95 --cleaning_rounds 5 --disconnect_ratio 0.1 --low_local_ratio 0.2 --cleaning_rounds 5 --min_depth 2 --bubble_level 2 --max_tip_len -1 --careful_bubble
+2020-10-03 15:35:58 - INFO  main_assemble.cpp             :  129 - Loading succinct de Bruijn graph: /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k59/59Done. Time elapsed: 0.295558
+2020-10-03 15:35:58 - INFO  main_assemble.cpp             :  133 - Number of Edges: 14383716; K value: 59
+2020-10-03 15:35:58 - INFO  main_assemble.cpp             :  140 - Number of CPU threads: 4
+2020-10-03 15:35:59 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 2; Accumulated tips removed: 14; time elapsed: 0.0900
+2020-10-03 15:35:59 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 4; Accumulated tips removed: 44; time elapsed: 0.1588
+2020-10-03 15:35:59 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 8; Accumulated tips removed: 102; time elapsed: 0.3000
+2020-10-03 15:36:00 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 16; Accumulated tips removed: 254; time elapsed: 0.6047
+2020-10-03 15:36:01 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 32; Accumulated tips removed: 586; time elapsed: 1.1691
+2020-10-03 15:36:03 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 64; Accumulated tips removed: 26438; time elapsed: 2.2561
+2020-10-03 15:36:05 - INFO  assembly/sdbg_pruning.cpp     :  169 - Removing tips with length less than 118; Accumulated tips removed: 141460; time elapsed: 1.8015
+2020-10-03 15:36:05 - INFO  main_assemble.cpp             :  158 - Tips removal done! Time elapsed(sec): 7.061
+2020-10-03 15:36:06 - INFO  assembly/unitig_graph.cpp     :   84 - Graph size without loops: 10680, palindrome: 0
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  167 - unitig graph size: 10873, time for building: 0.911
+2020-10-03 15:36:06 - INFO  assembly/contig_stat.h        :   40 - Max: 5124, Min: 60, N50: 222, number contigs: 10873, number isolated: 8712, number looped: 193, total size: 2381043,
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 1
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 47, Time elapsed(sec): 0.005
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 902, Time elapsed(sec): 0.053393
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 16, time: 0.003
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 2, time: 0.002
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 2
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  192 - Tips removed: 915, time: 0.010
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.002
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 1, Time elapsed(sec): 0.002434
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 1, time: 0.002
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 1, time: 0.001
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 3
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  192 - Tips removed: 0, time: 0.006
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.002
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.001929
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 1, time: 0.002
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 4
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  192 - Tips removed: 1, time: 0.006
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.002
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.001934
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.002
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 5
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  192 - Tips removed: 0, time: 0.006
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.002
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.001946
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.002
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:36:06 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 60, N50: 230, number contigs: 8833, number isolated: 8758, number looped: 192, total size: 2178884,
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  267 - Time to output: 0.188258
+2020-10-03 15:36:06 - INFO  main_assemble.cpp             :  289 - Number of local low depth unitigs removed: 5, complex bubbles removed: 0, time: 0.008647
+2020-10-03 15:36:06 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 60, N50: 230, number contigs: 8819, number isolated: 8762, number looped: 192, total size: 2177681,
+2020-10-03 15:36:06 - INFO  utils/utils.h                 :  152 - Real: 8.7764	user: 30.8344	sys: 0.0520	maxrss: 49200
+2020-10-03 15:36:07 - Local assembly for k = 59
+2020-10-03 15:36:07 - command /home/ubuntu/miniconda2/bin/megahit_core local -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.contigs.fa -l /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib -t 4 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.local.fa --kmax 79
+2020-10-03 15:36:07 - INFO  localasm/hash_mapper.cpp      :  100 - Number of contigs: 5622, index size: 179028
+2020-10-03 15:36:07 - INFO  localasm/local_assemble.cpp   :  315 - Hash mapper construction time elapsed: 0.047207
+2020-10-03 15:36:07 - INFO  sequence/io/sequence_lib.cpp  :  115 - Before reading, sizeof seq_package: 209099792
+2020-10-03 15:36:07 - INFO  sequence/io/sequence_lib.cpp  :  117 - After reading, sizeof seq_package: 209099792
+2020-10-03 15:36:07 - INFO  localasm/local_assemble.cpp   :  324 - Read lib time elapsed: 0.430271
+2020-10-03 15:36:07 - INFO  localasm/local_assemble.cpp   :  330 - Insert size estimation time elapsed: 0.000001
+2020-10-03 15:36:28 - INFO  localasm/local_assemble.cpp   :  221 - Lib 0: total 5657798 reads, aligned 7828452, added 1763760 reads to local assembly
+2020-10-03 15:36:28 - INFO  localasm/local_assemble.cpp   :  338 - Mapping time elapsed: 20.731348
+2020-10-03 15:36:28 - INFO  localasm/local_assemble.cpp   :  232 - Minimum number of reads to do local assembly: 0
+2020-10-03 15:36:29 - INFO  localasm/local_assemble.cpp   :  346 - Local assembly time elapsed: 1.005193
+2020-10-03 15:36:29 - INFO  utils/utils.h                 :  152 - Real: 22.2307	user: 85.9608	sys: 0.2320	maxrss: 237276
+2020-10-03 15:36:29 - Extract iterative edges from k = 59 to 79 
+2020-10-03 15:36:29 - command /home/ubuntu/miniconda2/bin/megahit_core iterate -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.contigs.fa -b /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.bubble_seq.fa -t 4 -k 59 -s 20 -o /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k79/79 -r /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib.bin
+2020-10-03 15:36:29 - INFO  main_iterate.cpp              :  190 - Selected kmer type size for k: 16
+2020-10-03 15:36:29 - INFO  main_iterate.cpp              :  174 - Read 75 contigs
+2020-10-03 15:36:29 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 149
+2020-10-03 15:36:29 - INFO  main_iterate.cpp              :  174 - Read 2685 contigs
+2020-10-03 15:36:29 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 3708
+2020-10-03 15:36:29 - INFO  main_iterate.cpp              :  123 - Selected kmer type size for next k: 20
+2020-10-03 15:36:34 - INFO  main_iterate.cpp              :  139 - Processed: 4194304, aligned: 1652. Iterative edges: 10414
+2020-10-03 15:36:36 - INFO  main_iterate.cpp              :  139 - Processed: 5657798, aligned: 3113. Iterative edges: 19458
+2020-10-03 15:36:36 - INFO  main_iterate.cpp              :  143 - Total: 5657798, aligned: 3113. Iterative edges: 19458
+2020-10-03 15:36:36 - INFO  utils/utils.h                 :  152 - Real: 6.9270	user: 17.1139	sys: 0.2560	maxrss: 257416
+2020-10-03 15:36:36 - Build graph for k = 79 
+2020-10-03 15:36:36 - command /home/ubuntu/miniconda2/bin/megahit_core seq2sdbg --host_mem 14937255936.0 --mem_flag 1 --output_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k79/79 --num_cpu_threads 4 -k 79 --kmer_from 59 --input_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k79/79 --addi_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.addi.fa --local_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.local.fa --contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.contigs.fa --bubble /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.bubble_seq.fa
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  148 - Preparing data...
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  369 - Number edges: 19458
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  415 - Bases to reserve: 1904610, number contigs: 11642, number multiplicity: 31100
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  422 - Before reading, sizeof seq_package: 569300, multiplicity vector: 31100
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  428 - Read 19458 edges.
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  433 - After reading, sizeof seq_package: 569300/19458/1556640, multiplicity vector: 19458/31100
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  458 - Read 8825 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.contigs.fa.
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  463 - After reading contigs, sizeof seq_package: 1045456/28283/3738816, multiplicity vector: 28283/31100
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  470 - Read 1213 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.bubble_seq.fa.
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  475 - After reading contigs, sizeof seq_package: 1997768/29496/3896762, multiplicity vector: 29496/31100
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  484 - Read 4 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.addi.fa.
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  489 - After reading contigs, sizeof seq_package: 1997768/29500/3898965, multiplicity vector: 29500/31100
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  498 - Read 120 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k59.local.fa.
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  503 - After reading contigs, sizeof seq_package: 1997768/29620/3924319, multiplicity vector: 29620/31100
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  508 - Finally, sizeof seq_package: 1997768/29620/3924319, multiplicity vector: 29620/31100
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  153 - Preparing data... Done. Time elapsed: 0.0195
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  156 - Preparing partitions and calculating bucket sizes...
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :   80 - Minimum memory required: 2264772 bytes
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  138 - Lv1 items: 438287, Lv2 items: 2958
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  140 - Memory of derived class: 2090656, Memory for Lv1+Lv2: 1824140
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  168 - Preparing partitions and calculating bucket sizes... Done. Time elapsed: 0.0234
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  172 - Start main loop...
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 0 to 1831
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0115
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0233
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 1831 to 5401
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0134
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0257
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 5401 to 10150
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0136
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0262
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 10150 to 16027
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0137
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0270
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 16027 to 23223
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0137
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0276
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 23223 to 32434
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0139
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0272
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 32434 to 49564
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0142
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0261
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 49564 to 65536
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0097
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0093
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  204 - Main loop done. Time elapsed: 0.3021
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  207 - Postprocessing...
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  793 - Number of $ A C G T A- C- G- T-:
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  794 - 18886 913147 661531 644385 924673 64 18 46 90
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  800 - Total number of edges: 3162840
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  801 - Total number of ONEs: 3143736
+2020-10-03 15:36:36 - INFO  sorting/seq_to_sdbg.cpp       :  803 - Total number of $v edges: 18886
+2020-10-03 15:36:36 - INFO  sorting/base_engine.cpp       :  210 - Postprocess done. Time elapsed: 0.0716
+2020-10-03 15:36:36 - INFO  utils/utils.h                 :  152 - Real: 0.4193	user: 1.1110	sys: 0.0365	maxrss: 34684
+2020-10-03 15:36:36 - Assemble contigs from SdBG for k = 79
+2020-10-03 15:36:36 - command /home/ubuntu/miniconda2/bin/megahit_core assemble -s /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k79/79 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79 -t 4 --min_standalone 300 --prune_level 2 --merge_len 20 --merge_similar 0.95 --cleaning_rounds 5 --disconnect_ratio 0.1 --low_local_ratio 0.2 --cleaning_rounds 5 --min_depth 2 --bubble_level 2 --max_tip_len -1 --careful_bubble
+2020-10-03 15:36:36 - INFO  main_assemble.cpp             :  129 - Loading succinct de Bruijn graph: /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k79/79Done. Time elapsed: 0.136472
+2020-10-03 15:36:36 - INFO  main_assemble.cpp             :  133 - Number of Edges: 3162840; K value: 79
+2020-10-03 15:36:36 - INFO  main_assemble.cpp             :  140 - Number of CPU threads: 4
+2020-10-03 15:36:36 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 2; Accumulated tips removed: 2; time elapsed: 0.0143
+2020-10-03 15:36:36 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 4; Accumulated tips removed: 8; time elapsed: 0.0210
+2020-10-03 15:36:36 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 8; Accumulated tips removed: 18; time elapsed: 0.0345
+2020-10-03 15:36:37 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 16; Accumulated tips removed: 38; time elapsed: 0.0614
+2020-10-03 15:36:37 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 32; Accumulated tips removed: 54; time elapsed: 0.1210
+2020-10-03 15:36:37 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 64; Accumulated tips removed: 566; time elapsed: 0.2288
+2020-10-03 15:36:37 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 128; Accumulated tips removed: 8890; time elapsed: 0.3397
+2020-10-03 15:36:37 - INFO  assembly/sdbg_pruning.cpp     :  169 - Removing tips with length less than 158; Accumulated tips removed: 12876; time elapsed: 0.2377
+2020-10-03 15:36:37 - INFO  main_assemble.cpp             :  158 - Tips removal done! Time elapsed(sec): 1.215
+2020-10-03 15:36:38 - INFO  assembly/unitig_graph.cpp     :   84 - Graph size without loops: 3266, palindrome: 0
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  167 - unitig graph size: 3459, time for building: 0.327
+2020-10-03 15:36:38 - INFO  assembly/contig_stat.h        :   40 - Max: 5144, Min: 80, N50: 299, number contigs: 3459, number isolated: 3159, number looped: 193, total size: 1095777,
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 1
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 3, Time elapsed(sec): 0.001
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 135, Time elapsed(sec): 0.008572
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.001
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 2
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  192 - Tips removed: 313, time: 0.003
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.001
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.000647
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.001
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 3
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  192 - Tips removed: 0, time: 0.002
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.001
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.000628
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.001
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:36:38 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 94, N50: 307, number contigs: 3000, number isolated: 2984, number looped: 14, total size: 1030510,
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  267 - Time to output: 0.073175
+2020-10-03 15:36:38 - INFO  main_assemble.cpp             :  289 - Number of local low depth unitigs removed: 1, complex bubbles removed: 0, time: 0.001274
+2020-10-03 15:36:38 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 94, N50: 307, number contigs: 2997, number isolated: 2985, number looped: 14, total size: 1030149,
+2020-10-03 15:36:38 - INFO  utils/utils.h                 :  152 - Real: 1.8597	user: 6.3639	sys: 0.0360	maxrss: 22752
+2020-10-03 15:36:38 - Local assembly for k = 79
+2020-10-03 15:36:38 - command /home/ubuntu/miniconda2/bin/megahit_core local -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.contigs.fa -l /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib -t 4 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.local.fa --kmax 99
+2020-10-03 15:36:38 - INFO  localasm/hash_mapper.cpp      :  100 - Number of contigs: 2983, index size: 117596
+2020-10-03 15:36:38 - INFO  localasm/local_assemble.cpp   :  315 - Hash mapper construction time elapsed: 0.029889
+2020-10-03 15:36:38 - INFO  sequence/io/sequence_lib.cpp  :  115 - Before reading, sizeof seq_package: 209099792
+2020-10-03 15:36:39 - INFO  sequence/io/sequence_lib.cpp  :  117 - After reading, sizeof seq_package: 209099792
+2020-10-03 15:36:39 - INFO  localasm/local_assemble.cpp   :  324 - Read lib time elapsed: 0.532793
+2020-10-03 15:36:39 - INFO  localasm/local_assemble.cpp   :  330 - Insert size estimation time elapsed: 0.000001
+2020-10-03 15:36:58 - INFO  localasm/local_assemble.cpp   :  221 - Lib 0: total 5657798 reads, aligned 9022828, added 2165580 reads to local assembly
+2020-10-03 15:36:58 - INFO  localasm/local_assemble.cpp   :  338 - Mapping time elapsed: 19.410905
+2020-10-03 15:36:58 - INFO  localasm/local_assemble.cpp   :  232 - Minimum number of reads to do local assembly: 0
+2020-10-03 15:36:59 - INFO  localasm/local_assemble.cpp   :  346 - Local assembly time elapsed: 0.786544
+2020-10-03 15:36:59 - INFO  utils/utils.h                 :  152 - Real: 20.7755	user: 79.0729	sys: 0.2759	maxrss: 237016
+2020-10-03 15:36:59 - Extract iterative edges from k = 79 to 99 
+2020-10-03 15:36:59 - command /home/ubuntu/miniconda2/bin/megahit_core iterate -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.contigs.fa -b /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.bubble_seq.fa -t 4 -k 79 -s 20 -o /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k99/99 -r /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib.bin
+2020-10-03 15:36:59 - INFO  main_iterate.cpp              :  190 - Selected kmer type size for k: 20
+2020-10-03 15:36:59 - INFO  main_iterate.cpp              :  174 - Read 16 contigs
+2020-10-03 15:36:59 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 32
+2020-10-03 15:36:59 - INFO  main_iterate.cpp              :  174 - Read 408 contigs
+2020-10-03 15:36:59 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 559
+2020-10-03 15:36:59 - INFO  main_iterate.cpp              :  123 - Selected kmer type size for next k: 28
+2020-10-03 15:37:03 - INFO  main_iterate.cpp              :  139 - Processed: 4194304, aligned: 266. Iterative edges: 1225
+2020-10-03 15:37:04 - INFO  main_iterate.cpp              :  139 - Processed: 5657798, aligned: 517. Iterative edges: 2272
+2020-10-03 15:37:04 - INFO  main_iterate.cpp              :  143 - Total: 5657798, aligned: 517. Iterative edges: 2272
+2020-10-03 15:37:04 - INFO  utils/utils.h                 :  152 - Real: 5.6816	user: 14.0258	sys: 0.2480	maxrss: 257056
+2020-10-03 15:37:04 - Build graph for k = 99 
+2020-10-03 15:37:04 - command /home/ubuntu/miniconda2/bin/megahit_core seq2sdbg --host_mem 14937255936.0 --mem_flag 1 --output_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k99/99 --num_cpu_threads 4 -k 99 --kmer_from 79 --input_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k99/99 --addi_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.addi.fa --local_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.local.fa --contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.contigs.fa --bubble /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.bubble_seq.fa
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  148 - Preparing data...
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  369 - Number edges: 2272
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  415 - Bases to reserve: 332794, number contigs: 3457, number multiplicity: 5729
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  422 - Before reading, sizeof seq_package: 110864, multiplicity vector: 5729
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  428 - Read 2272 edges.
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  433 - After reading, sizeof seq_package: 110864/2272/227200, multiplicity vector: 2272/5729
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  458 - Read 2999 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.contigs.fa.
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  463 - After reading contigs, sizeof seq_package: 360464/5271/1257896, multiplicity vector: 5271/5729
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  470 - Read 159 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.bubble_seq.fa.
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  475 - After reading contigs, sizeof seq_package: 360464/5430/1283962, multiplicity vector: 5430/5729
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  484 - Read 1 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.addi.fa.
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  489 - After reading contigs, sizeof seq_package: 360464/5431/1284966, multiplicity vector: 5431/5729
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  498 - Read 48 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k79.local.fa.
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  503 - After reading contigs, sizeof seq_package: 360464/5479/1295108, multiplicity vector: 5479/5729
+2020-10-03 15:37:04 - INFO  sorting/seq_to_sdbg.cpp       :  508 - Finally, sizeof seq_package: 360464/5479/1295108, multiplicity vector: 5479/5729
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  153 - Preparing data... Done. Time elapsed: 0.0123
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  156 - Preparing partitions and calculating bucket sizes...
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :   80 - Minimum memory required: 460778 bytes
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  138 - Lv1 items: 203638, Lv2 items: 1100
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  140 - Memory of derived class: 382066, Memory for Lv1+Lv2: 845352
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  168 - Preparing partitions and calculating bucket sizes... Done. Time elapsed: 0.0176
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  172 - Start main loop...
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 0 to 2035
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0048
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0110
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 2035 to 5800
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0053
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0119
+2020-10-03 15:37:04 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 5800 to 10688
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0053
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0121
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 10688 to 16653
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0055
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0123
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 16653 to 23948
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0056
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0121
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 23948 to 33384
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0057
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0122
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 33384 to 50056
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0059
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0128
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 50056 to 65536
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0046
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0053
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  204 - Main loop done. Time elapsed: 0.1377
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  207 - Postprocessing...
+2020-10-03 15:37:05 - INFO  sorting/seq_to_sdbg.cpp       :  793 - Number of $ A C G T A- C- G- T-:
+2020-10-03 15:37:05 - INFO  sorting/seq_to_sdbg.cpp       :  794 - 6251 430199 323945 316236 435412 9 8 6 12
+2020-10-03 15:37:05 - INFO  sorting/seq_to_sdbg.cpp       :  800 - Total number of edges: 1512078
+2020-10-03 15:37:05 - INFO  sorting/seq_to_sdbg.cpp       :  801 - Total number of ONEs: 1505792
+2020-10-03 15:37:05 - INFO  sorting/seq_to_sdbg.cpp       :  803 - Total number of $v edges: 6251
+2020-10-03 15:37:05 - INFO  sorting/base_engine.cpp       :  210 - Postprocess done. Time elapsed: 0.0706
+2020-10-03 15:37:05 - INFO  utils/utils.h                 :  152 - Real: 0.2406	user: 0.6161	sys: 0.0235	maxrss: 33256
+2020-10-03 15:37:05 - Assemble contigs from SdBG for k = 99
+2020-10-03 15:37:05 - command /home/ubuntu/miniconda2/bin/megahit_core assemble -s /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k99/99 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99 -t 4 --min_standalone 300 --prune_level 2 --merge_len 20 --merge_similar 0.95 --cleaning_rounds 5 --disconnect_ratio 0.1 --low_local_ratio 0.2 --cleaning_rounds 5 --min_depth 2 --bubble_level 2 --max_tip_len -1 --careful_bubble
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  129 - Loading succinct de Bruijn graph: /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k99/99Done. Time elapsed: 0.104267
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  133 - Number of Edges: 1512078; K value: 99
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  140 - Number of CPU threads: 4
+2020-10-03 15:37:05 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 2; Accumulated tips removed: 2; time elapsed: 0.0059
+2020-10-03 15:37:05 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 4; Accumulated tips removed: 2; time elapsed: 0.0079
+2020-10-03 15:37:05 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 8; Accumulated tips removed: 4; time elapsed: 0.0122
+2020-10-03 15:37:05 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 16; Accumulated tips removed: 10; time elapsed: 0.0208
+2020-10-03 15:37:05 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 32; Accumulated tips removed: 26; time elapsed: 0.0374
+2020-10-03 15:37:05 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 64; Accumulated tips removed: 46; time elapsed: 0.0706
+2020-10-03 15:37:05 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 128; Accumulated tips removed: 304; time elapsed: 0.1328
+2020-10-03 15:37:05 - INFO  assembly/sdbg_pruning.cpp     :  169 - Removing tips with length less than 198; Accumulated tips removed: 3844; time elapsed: 0.1429
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  158 - Tips removal done! Time elapsed(sec): 0.506
+2020-10-03 15:37:05 - INFO  assembly/unitig_graph.cpp     :   84 - Graph size without loops: 1234, palindrome: 0
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  167 - unitig graph size: 1248, time for building: 0.152
+2020-10-03 15:37:05 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 100, N50: 418, number contigs: 1248, number isolated: 1224, number looped: 14, total size: 574574,
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 1
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 1, Time elapsed(sec): 0.000
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 8, Time elapsed(sec): 0.000972
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.000
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 2
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  192 - Tips removed: 9, time: 0.001
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.000
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.000398
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.000
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 3
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  192 - Tips removed: 0, time: 0.001
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.000
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.000397
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.000
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:37:05 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 231, N50: 419, number contigs: 1228, number isolated: 1224, number looped: 14, total size: 571556,
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  267 - Time to output: 0.040738
+2020-10-03 15:37:05 - INFO  main_assemble.cpp             :  289 - Number of local low depth unitigs removed: 1, complex bubbles removed: 0, time: 0.000563
+2020-10-03 15:37:05 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 231, N50: 419, number contigs: 1225, number isolated: 1225, number looped: 14, total size: 571115,
+2020-10-03 15:37:06 - INFO  utils/utils.h                 :  152 - Real: 0.8552	user: 2.8701	sys: 0.0159	maxrss: 22544
+2020-10-03 15:37:06 - Local assembly for k = 99
+2020-10-03 15:37:06 - command /home/ubuntu/miniconda2/bin/megahit_core local -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.contigs.fa -l /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib -t 4 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.local.fa --kmax 119
+2020-10-03 15:37:06 - INFO  localasm/hash_mapper.cpp      :  100 - Number of contigs: 1214, index size: 66122
+2020-10-03 15:37:06 - INFO  localasm/local_assemble.cpp   :  315 - Hash mapper construction time elapsed: 0.021625
+2020-10-03 15:37:06 - INFO  sequence/io/sequence_lib.cpp  :  115 - Before reading, sizeof seq_package: 209099792
+2020-10-03 15:37:06 - INFO  sequence/io/sequence_lib.cpp  :  117 - After reading, sizeof seq_package: 209099792
+2020-10-03 15:37:06 - INFO  localasm/local_assemble.cpp   :  324 - Read lib time elapsed: 0.430400
+2020-10-03 15:37:06 - INFO  localasm/local_assemble.cpp   :  330 - Insert size estimation time elapsed: 0.000002
+2020-10-03 15:37:24 - INFO  localasm/local_assemble.cpp   :  221 - Lib 0: total 5657798 reads, aligned 8392592, added 1960484 reads to local assembly
+2020-10-03 15:37:24 - INFO  localasm/local_assemble.cpp   :  338 - Mapping time elapsed: 18.133753
+2020-10-03 15:37:24 - INFO  localasm/local_assemble.cpp   :  232 - Minimum number of reads to do local assembly: 0
+2020-10-03 15:37:25 - INFO  localasm/local_assemble.cpp   :  346 - Local assembly time elapsed: 0.553783
+2020-10-03 15:37:25 - INFO  utils/utils.h                 :  152 - Real: 19.1539	user: 74.7352	sys: 0.2159	maxrss: 230372
+2020-10-03 15:37:25 - Extract iterative edges from k = 99 to 119 
+2020-10-03 15:37:25 - command /home/ubuntu/miniconda2/bin/megahit_core iterate -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.contigs.fa -b /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.bubble_seq.fa -t 4 -k 99 -s 20 -o /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k119/119 -r /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib.bin
+2020-10-03 15:37:25 - INFO  main_iterate.cpp              :  190 - Selected kmer type size for k: 28
+2020-10-03 15:37:25 - INFO  main_iterate.cpp              :  174 - Read 4 contigs
+2020-10-03 15:37:25 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 8
+2020-10-03 15:37:25 - INFO  main_iterate.cpp              :  174 - Read 27 contigs
+2020-10-03 15:37:25 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 43
+2020-10-03 15:37:25 - INFO  main_iterate.cpp              :  123 - Selected kmer type size for next k: 32
+2020-10-03 15:37:28 - INFO  main_iterate.cpp              :  139 - Processed: 4194304, aligned: 77. Iterative edges: 103
+2020-10-03 15:37:29 - INFO  main_iterate.cpp              :  139 - Processed: 5657798, aligned: 120. Iterative edges: 174
+2020-10-03 15:37:29 - INFO  main_iterate.cpp              :  143 - Total: 5657798, aligned: 120. Iterative edges: 174
+2020-10-03 15:37:29 - INFO  utils/utils.h                 :  152 - Real: 4.2784	user: 10.1234	sys: 0.2362	maxrss: 257044
+2020-10-03 15:37:29 - Build graph for k = 119 
+2020-10-03 15:37:29 - command /home/ubuntu/miniconda2/bin/megahit_core seq2sdbg --host_mem 14937255936.0 --mem_flag 1 --output_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k119/119 --num_cpu_threads 4 -k 119 --kmer_from 99 --input_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k119/119 --addi_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.addi.fa --local_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.local.fa --contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.contigs.fa --bubble /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.bubble_seq.fa
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  148 - Preparing data...
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  369 - Number edges: 174
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  415 - Bases to reserve: 61413, number contigs: 1281, number multiplicity: 1455
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  422 - Before reading, sizeof seq_package: 25612, multiplicity vector: 1455
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  428 - Read 174 edges.
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  433 - After reading, sizeof seq_package: 25612/174/20880, multiplicity vector: 174/1455
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  458 - Read 1228 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.contigs.fa.
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  463 - After reading contigs, sizeof seq_package: 255952/1402/592716, multiplicity vector: 1402/1455
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  470 - Read 10 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.bubble_seq.fa.
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  475 - After reading contigs, sizeof seq_package: 255952/1412/594757, multiplicity vector: 1412/1455
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  484 - Read 1 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.addi.fa.
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  489 - After reading contigs, sizeof seq_package: 255952/1413/595761, multiplicity vector: 1413/1455
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  498 - Read 25 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k99.local.fa.
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  503 - After reading contigs, sizeof seq_package: 255952/1438/601126, multiplicity vector: 1438/1455
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  508 - Finally, sizeof seq_package: 255952/1438/601126, multiplicity vector: 1438/1455
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  153 - Preparing data... Done. Time elapsed: 0.0103
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  156 - Preparing partitions and calculating bucket sizes...
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :   80 - Minimum memory required: 310586 bytes
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  138 - Lv1 items: 115434, Lv2 items: 551
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  140 - Memory of derived class: 263590, Memory for Lv1+Lv2: 481572
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  168 - Preparing partitions and calculating bucket sizes... Done. Time elapsed: 0.0169
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  172 - Start main loop...
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 0 to 2196
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0021
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0067
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 2196 to 6128
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0023
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0072
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 6128 to 11157
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0023
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0072
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 11157 to 17288
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0024
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0073
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 17288 to 24818
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0025
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0074
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 24818 to 34674
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0025
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0076
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 34674 to 51223
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0028
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0082
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 51223 to 65536
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0021
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0035
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  204 - Main loop done. Time elapsed: 0.0782
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  207 - Postprocessing...
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  793 - Number of $ A C G T A- C- G- T-:
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  794 - 2455 240784 189784 185992 243024 2 3 1 1
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  800 - Total number of edges: 862046
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  801 - Total number of ONEs: 859584
+2020-10-03 15:37:29 - INFO  sorting/seq_to_sdbg.cpp       :  803 - Total number of $v edges: 2455
+2020-10-03 15:37:29 - INFO  sorting/base_engine.cpp       :  210 - Postprocess done. Time elapsed: 0.0677
+2020-10-03 15:37:29 - INFO  utils/utils.h                 :  152 - Real: 0.1755	user: 0.3995	sys: 0.0247	maxrss: 32448
+2020-10-03 15:37:29 - Assemble contigs from SdBG for k = 119
+2020-10-03 15:37:29 - command /home/ubuntu/miniconda2/bin/megahit_core assemble -s /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k119/119 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119 -t 4 --min_standalone 300 --prune_level 2 --merge_len 20 --merge_similar 0.95 --cleaning_rounds 5 --disconnect_ratio 0.1 --low_local_ratio 0.2 --cleaning_rounds 5 --min_depth 2 --bubble_level 2 --max_tip_len 182.0 --careful_bubble
+2020-10-03 15:37:29 - INFO  main_assemble.cpp             :  129 - Loading succinct de Bruijn graph: /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k119/119Done. Time elapsed: 0.094471
+2020-10-03 15:37:29 - INFO  main_assemble.cpp             :  133 - Number of Edges: 862046; K value: 119
+2020-10-03 15:37:29 - INFO  main_assemble.cpp             :  140 - Number of CPU threads: 4
+2020-10-03 15:37:29 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 2; Accumulated tips removed: 0; time elapsed: 0.0031
+2020-10-03 15:37:29 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 4; Accumulated tips removed: 0; time elapsed: 0.0038
+2020-10-03 15:37:29 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 8; Accumulated tips removed: 2; time elapsed: 0.0055
+2020-10-03 15:37:29 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 16; Accumulated tips removed: 4; time elapsed: 0.0089
+2020-10-03 15:37:29 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 32; Accumulated tips removed: 8; time elapsed: 0.0158
+2020-10-03 15:37:29 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 64; Accumulated tips removed: 8; time elapsed: 0.0292
+2020-10-03 15:37:29 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 128; Accumulated tips removed: 34; time elapsed: 0.0556
+2020-10-03 15:37:29 - INFO  assembly/sdbg_pruning.cpp     :  169 - Removing tips with length less than 182; Accumulated tips removed: 174; time elapsed: 0.0754
+2020-10-03 15:37:29 - INFO  main_assemble.cpp             :  158 - Tips removal done! Time elapsed(sec): 0.242
+2020-10-03 15:37:30 - INFO  assembly/unitig_graph.cpp     :   84 - Graph size without loops: 1146, palindrome: 0
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  167 - unitig graph size: 1160, time for building: 0.133
+2020-10-03 15:37:30 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 251, N50: 430, number contigs: 1160, number isolated: 1156, number looped: 14, total size: 552733,
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 1
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.000
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 1, Time elapsed(sec): 0.000850
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.000
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 2
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  192 - Tips removed: 0, time: 0.001
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.000
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.000190
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.000
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:37:30 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 251, N50: 431, number contigs: 1157, number isolated: 1157, number looped: 14, total size: 552212,
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  267 - Time to output: 0.036121
+2020-10-03 15:37:30 - INFO  main_assemble.cpp             :  289 - Number of local low depth unitigs removed: 0, complex bubbles removed: 0, time: 0.000234
+2020-10-03 15:37:30 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 251, N50: 431, number contigs: 1157, number isolated: 1157, number looped: 14, total size: 552212,
+2020-10-03 15:37:30 - INFO  utils/utils.h                 :  152 - Real: 0.5499	user: 1.7777	sys: 0.0241	maxrss: 22412
+2020-10-03 15:37:30 - Local assembly for k = 119
+2020-10-03 15:37:30 - command /home/ubuntu/miniconda2/bin/megahit_core local -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.contigs.fa -l /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib -t 4 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.local.fa --kmax 141
+2020-10-03 15:37:30 - INFO  localasm/hash_mapper.cpp      :  100 - Number of contigs: 1143, index size: 63941
+2020-10-03 15:37:30 - INFO  localasm/local_assemble.cpp   :  315 - Hash mapper construction time elapsed: 0.015317
+2020-10-03 15:37:30 - INFO  sequence/io/sequence_lib.cpp  :  115 - Before reading, sizeof seq_package: 209099792
+2020-10-03 15:37:30 - INFO  sequence/io/sequence_lib.cpp  :  117 - After reading, sizeof seq_package: 209099792
+2020-10-03 15:37:30 - INFO  localasm/local_assemble.cpp   :  324 - Read lib time elapsed: 0.431871
+2020-10-03 15:37:30 - INFO  localasm/local_assemble.cpp   :  330 - Insert size estimation time elapsed: 0.000002
+2020-10-03 15:37:48 - INFO  localasm/local_assemble.cpp   :  221 - Lib 0: total 5657798 reads, aligned 8264120, added 1686692 reads to local assembly
+2020-10-03 15:37:48 - INFO  localasm/local_assemble.cpp   :  338 - Mapping time elapsed: 18.067969
+2020-10-03 15:37:48 - INFO  localasm/local_assemble.cpp   :  232 - Minimum number of reads to do local assembly: 0
+2020-10-03 15:37:49 - INFO  localasm/local_assemble.cpp   :  346 - Local assembly time elapsed: 0.508214
+2020-10-03 15:37:49 - INFO  utils/utils.h                 :  152 - Real: 19.0370	user: 74.4286	sys: 0.1680	maxrss: 227712
+2020-10-03 15:37:49 - Extract iterative edges from k = 119 to 141 
+2020-10-03 15:37:49 - command /home/ubuntu/miniconda2/bin/megahit_core iterate -c /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.contigs.fa -b /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.bubble_seq.fa -t 4 -k 119 -s 22 -o /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k141/141 -r /home/ubuntu/Material/Day1/Data/megahit_out/tmp/reads.lib.bin
+2020-10-03 15:37:49 - INFO  main_iterate.cpp              :  190 - Selected kmer type size for k: 32
+2020-10-03 15:37:49 - INFO  main_iterate.cpp              :  174 - Read 3 contigs
+2020-10-03 15:37:49 - INFO  main_iterate.cpp              :  176 - Number of flank kmers: 6
+2020-10-03 15:37:49 - INFO  main_iterate.cpp              :  123 - Selected kmer type size for next k: 64
+2020-10-03 15:37:50 - INFO  main_iterate.cpp              :  139 - Processed: 4194304, aligned: 8. Iterative edges: 13
+2020-10-03 15:37:50 - INFO  main_iterate.cpp              :  139 - Processed: 5657798, aligned: 12. Iterative edges: 24
+2020-10-03 15:37:50 - INFO  main_iterate.cpp              :  143 - Total: 5657798, aligned: 12. Iterative edges: 24
+2020-10-03 15:37:50 - INFO  utils/utils.h                 :  152 - Real: 1.3796	user: 1.6433	sys: 0.2497	maxrss: 257068
+2020-10-03 15:37:50 - Build graph for k = 141 
+2020-10-03 15:37:50 - command /home/ubuntu/miniconda2/bin/megahit_core seq2sdbg --host_mem 14937255936.0 --mem_flag 1 --output_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k141/141 --num_cpu_threads 4 -k 141 --kmer_from 119 --input_prefix /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k141/141 --addi_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.addi.fa --local_contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.local.fa --contig /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.contigs.fa --bubble /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.bubble_seq.fa
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  148 - Preparing data...
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  369 - Number edges: 24
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  415 - Bases to reserve: 39932, number contigs: 1179, number multiplicity: 1203
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  422 - Before reading, sizeof seq_package: 19424, multiplicity vector: 1203
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  428 - Read 24 edges.
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  433 - After reading, sizeof seq_package: 19424/24/3408, multiplicity vector: 24/1203
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  458 - Read 1157 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.contigs.fa.
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  463 - After reading contigs, sizeof seq_package: 169184/1181/555928, multiplicity vector: 1181/1203
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  470 - Read 3 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.bubble_seq.fa.
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  475 - After reading contigs, sizeof seq_package: 169184/1184/557170, multiplicity vector: 1184/1203
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  484 - Read 0 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.addi.fa.
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  489 - After reading contigs, sizeof seq_package: 169184/1184/557170, multiplicity vector: 1184/1203
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  498 - Read 19 contigs from /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k119.local.fa.
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  503 - After reading contigs, sizeof seq_package: 169184/1203/561214, multiplicity vector: 1203/1203
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  508 - Finally, sizeof seq_package: 169184/1203/561214, multiplicity vector: 1203/1203
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  153 - Preparing data... Done. Time elapsed: 0.0098
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  156 - Preparing partitions and calculating bucket sizes...
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :   80 - Minimum memory required: 221886 bytes
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  138 - Lv1 items: 105065, Lv2 items: 529
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  140 - Memory of derived class: 176006, Memory for Lv1+Lv2: 441420
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  168 - Preparing partitions and calculating bucket sizes... Done. Time elapsed: 0.0170
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  172 - Start main loop...
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 0 to 2216
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0018
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0063
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 2216 to 6186
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0020
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0068
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 6186 to 11258
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0020
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0069
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 11258 to 17456
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0021
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0069
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 17456 to 25071
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0021
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0070
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 25071 to 35099
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0023
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0071
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 35099 to 52139
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0025
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0078
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  186 - Lv1 scanning from bucket 52139 to 65536
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  193 - Lv1 scanning done. Large diff: 0. Time elapsed: 0.0018
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  199 - Lv1 fetching & sorting done. Time elapsed: 0.0029
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  204 - Main loop done. Time elapsed: 0.0724
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  207 - Postprocessing...
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  793 - Number of $ A C G T A- C- G- T-:
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  794 - 2308 218693 174069 170162 221030 2 0 0 0
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  800 - Total number of edges: 786264
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  801 - Total number of ONEs: 783954
+2020-10-03 15:37:50 - INFO  sorting/seq_to_sdbg.cpp       :  803 - Total number of $v edges: 2308
+2020-10-03 15:37:50 - INFO  sorting/base_engine.cpp       :  210 - Postprocess done. Time elapsed: 0.0688
+2020-10-03 15:37:50 - INFO  utils/utils.h                 :  152 - Real: 0.1703	user: 0.3866	sys: 0.0158	maxrss: 32516
+2020-10-03 15:37:50 - Assemble contigs from SdBG for k = 141
+2020-10-03 15:37:50 - command /home/ubuntu/miniconda2/bin/megahit_core assemble -s /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k141/141 -o /home/ubuntu/Material/Day1/Data/megahit_out/intermediate_contigs/k141 -t 4 --min_standalone 300 --prune_level 2 --merge_len 20 --merge_similar 0.95 --cleaning_rounds 5 --disconnect_ratio 0.1 --low_local_ratio 0.2 --cleaning_rounds 5 --min_depth 2 --bubble_level 2 --max_tip_len 160.0 --is_final_round
+2020-10-03 15:37:50 - INFO  main_assemble.cpp             :  129 - Loading succinct de Bruijn graph: /home/ubuntu/Material/Day1/Data/megahit_out/tmp/k141/141Done. Time elapsed: 0.101247
+2020-10-03 15:37:50 - INFO  main_assemble.cpp             :  133 - Number of Edges: 786264; K value: 141
+2020-10-03 15:37:50 - INFO  main_assemble.cpp             :  140 - Number of CPU threads: 4
+2020-10-03 15:37:50 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 2; Accumulated tips removed: 0; time elapsed: 0.0032
+2020-10-03 15:37:50 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 4; Accumulated tips removed: 0; time elapsed: 0.0036
+2020-10-03 15:37:50 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 8; Accumulated tips removed: 2; time elapsed: 0.0055
+2020-10-03 15:37:50 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 16; Accumulated tips removed: 4; time elapsed: 0.0087
+2020-10-03 15:37:50 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 32; Accumulated tips removed: 4; time elapsed: 0.0172
+2020-10-03 15:37:51 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 64; Accumulated tips removed: 6; time elapsed: 0.0461
+2020-10-03 15:37:51 - INFO  assembly/sdbg_pruning.cpp     :  160 - Removing tips with length less than 128; Accumulated tips removed: 22; time elapsed: 0.1038
+2020-10-03 15:37:51 - INFO  assembly/sdbg_pruning.cpp     :  169 - Removing tips with length less than 160; Accumulated tips removed: 24; time elapsed: 0.0937
+2020-10-03 15:37:51 - INFO  main_assemble.cpp             :  158 - Tips removal done! Time elapsed(sec): 0.323
+2020-10-03 15:37:51 - INFO  assembly/unitig_graph.cpp     :   84 - Graph size without loops: 1143, palindrome: 0
+2020-10-03 15:37:51 - INFO  main_assemble.cpp             :  167 - unitig graph size: 1157, time for building: 0.128
+2020-10-03 15:37:51 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 273, N50: 432, number contigs: 1157, number isolated: 1157, number looped: 14, total size: 553159,
+2020-10-03 15:37:51 - INFO  main_assemble.cpp             :  184 - Graph cleaning round 1
+2020-10-03 15:37:51 - INFO  main_assemble.cpp             :  201 - Number of bubbles removed: 0, Time elapsed(sec): 0.000
+2020-10-03 15:37:51 - INFO  main_assemble.cpp             :  211 - Number of complex bubbles removed: 0, Time elapsed(sec): 0.000203
+2020-10-03 15:37:51 - INFO  main_assemble.cpp             :  222 - Number unitigs disconnected: 0, time: 0.000
+2020-10-03 15:37:51 - INFO  main_assemble.cpp             :  246 - Unitigs removed in excessive pruning: 0, time: 0.000
+2020-10-03 15:37:51 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 273, N50: 432, number contigs: 1157, number isolated: 1157, number looped: 14, total size: 553159,
+2020-10-03 15:37:51 - INFO  main_assemble.cpp             :  289 - Number of local low depth unitigs removed: 0, complex bubbles removed: 0, time: 0.000223
+2020-10-03 15:37:51 - INFO  assembly/contig_stat.h        :   40 - Max: 5387, Min: 273, N50: 432, number contigs: 1157, number isolated: 1157, number looped: 14, total size: 553159,
+2020-10-03 15:37:51 - INFO  utils/utils.h                 :  152 - Real: 0.5992	user: 1.7500	sys: 0.0135	maxrss: 22480
+2020-10-03 15:37:51 - Merging to output final contigs 
+2020-10-03 15:37:51 - 1157 contigs, total 553159 bp, min 273 bp, max 5387 bp, avg 478 bp, N50 432 bp
+2020-10-03 15:37:51 - ALL DONE. Time elapsed: 449.523819 seconds 
